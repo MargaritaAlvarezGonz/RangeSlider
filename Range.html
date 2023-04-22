@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Slider</title>
+    <link rel="stylesheet" href="Range.css">
+</head>
+<body>
+
+    <form class="body"> 
+
+        <div class="range-slider">  
+            <input type="range" min="0" max="200"  value="100" class= "slider"/> 
+                <div class="slider-thumb">  
+                    <div class="tooltip">
+                        <div class="tooltip-img">
+                            <img src="WateringCan.png" alt="">
+                        </div>
+                    <p></p>
+                    </div>
+                </div>  
+                <div class="progress">
+                    
+                </div>  
+        </div>
+        
+        <script>
+            const slider = document.querySelector('.slider');
+            const slider_thumb = document.querySelector('.slider-thumb');
+            const tooltip = document.querySelector('.tooltip');
+            const p = document.querySelector('.tooltip p');
+            const progress = document.querySelector('.progress');
+
+            slider.addEventListener('input', customRangerSlider);
+            
+            function customRangerSlider() {
+                const value = (slider.value/slider.max) * 100 + "%";
+                progress.style.width = value;
+                slider_thumb.style.cssText = `left: ${value}; transform:translate(-${value}, -50%);`
+                p.innerText = value;
+
+                
+            }
+            
+        </script>
+
+
+
+
+
+
+    </form> 
+    
+</body>
+</html>
