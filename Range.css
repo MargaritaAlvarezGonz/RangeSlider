@@ -69,15 +69,15 @@
 
 .tooltip{
     position: absolute;
-    top: calc(-16.875rem );
+    top: calc(-160px );
     left:50%;
     transform: translate(-50%);
-    width: 12rem;
-    height: 15.625rem;
+    width: 180px;
+    height: 8.75rem;
     background-color: none;
     border-radius: .4rem;
     text-align: center;
-    color: #fff;
+    color: #67dd00;
     
 }
 
@@ -96,18 +96,18 @@
 
 .tooltip-img{
     width: 100%;
-    height: 75%;
+    height: 70%;
     border-radius: .4rem .4rem 0 0;
     overflow: hidden;
     object-fit: contain;
 }
 
 .tooltip-img img {
-    width: 100%;
+    width: 50%;
 }
 
 .tooltip p {
-    margin-top: .4rem;
+    margin-top: .3rem;
 }
 
 .progress{  
@@ -120,4 +120,9 @@
     border-radius: .4rem;
 } 
 
+.rangeimg{
+    position: relative;
+    margin-top: -2.8125rem;
+    width: 60.375rem;
+}
  
