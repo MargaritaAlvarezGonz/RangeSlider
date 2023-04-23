@@ -9,12 +9,10 @@
 </head>
 <body>
 
-    <form class="body"> 
-
+    <div class="body"> 
         <div class="range-slider">  
-            <input type="range" min="0" max="200"  value="100" class= "slider"/> 
-                <div class="slider-thumb"> 
-                     
+            <input type="range" min="0" max="6"  value="3" class= "slider"/>              
+                <div class="slider-thumb">                      
                     <div class="tooltip">
                         <div class="tooltip-img">
                             <img src="WateringCan.png" alt="">
@@ -23,9 +21,9 @@
                     </div>
                 </div>  
                 <div class="progress">
-                    <img class="rangeimg" src="Range1.png" alt="">
-                </div>  
-        </div>
+                    <img class="rangeimg" src="Opción2v2.png" alt="">
+                </div>
+                <div></div>      
         
         <script>
             const slider = document.querySelector('.slider');
@@ -40,19 +38,13 @@
                 const value = (slider.value/slider.max) * 100 + "%";
                 progress.style.width = value;
                 slider_thumb.style.cssText = `left: ${value}; transform:translate(-${value}, -50%);`
-                p.innerText = value;
-
-                
+                // p.innerText = (value);                
             }
-            
-        </script>
 
-
-
-
-
-
-    </form> 
+           
+        </script> 
+        
+    </div> 
     
 </body>
 </html>

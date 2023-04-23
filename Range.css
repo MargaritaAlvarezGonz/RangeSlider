@@ -28,7 +28,7 @@
 
 .slider{ 
     -webkit-appearance: none; 
-    width: 80vw; 
+    width: 75vw; 
     height: .2rem; 
     border-radius: .4rem; 
     background-color: var(--light-gray); 
@@ -122,7 +122,13 @@
 
 .rangeimg{
     position: relative;
-    margin-top: -2.8125rem;
-    width: 60.375rem;
+    margin-top: -2.9375rem;
+    
+}
+
+.main{
+    width: 60%;
+    position: absolute;
+    margin-top: 50rem; 
 }
  
